@@ -51,8 +51,8 @@ img {
 
 .items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
- gap: 15rem;
+  grid-template-columns:  1fr;
+ gap: 17rem;
 }
 
 .normal-item {
@@ -64,7 +64,7 @@ img {
   position: relative;
   padding-top: 9.875rem;
   text-align: center;
-  margin-top: 15rem;
+  margin: auto;
 }
 
 .normal-item,
@@ -106,7 +106,8 @@ img {
   padding-top: 7.875rem;
   text-align: center;
   transition: .2s ease-out;
-  margin: 6px 1rem;
+  margin: auto;
+  
 }
 
 .best-item h3 {
@@ -262,7 +263,7 @@ img {
      gap: 10rem;
   }
   .best-item {
-     margin: 0px;
+     margin: auto;
   }
   .best-item h4 {
      font-size: 2rem;
@@ -271,7 +272,7 @@ img {
      font-size: 1rem;
   }
   .normal-item {
-     margin-top: 3rem;
+    margin: auto;
   }
   .normal-item .book {
      max-width: 15rem;
@@ -282,7 +283,7 @@ img {
 
 
   .best-item2 {
-    margin: 0px;
+    margin: auto;
  }
  .best-item2 h4 {
     font-size: 2rem;
