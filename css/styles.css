@@ -192,7 +192,7 @@ img {
   text-align: center;
   transition: .2s ease-out;
   margin: 139px 1rem;
-  pointer-events: auto; /* Garante que o botão seja clicável */
+ 
   pointer-events: none; /* Desativa cliques no h4 */
   
  
@@ -217,6 +217,7 @@ img {
 
 .best-item2 button {
   background: #217d82(--cor-10);
+   pointer-events: auto; /* Garante que o botão seja clicável */
 }
 
 .best-item2:hover  {
