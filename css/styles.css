@@ -229,6 +229,13 @@ img {
   margin-bottom: 4.25rem;
   width: 10px;
 }
+.best-item2 .book {
+  max-width: 11.25rem;
+  position: absolute;
+  top: -150px;
+  left: 50%;              /* Centraliza horizontalmente */
+  transform: translateX(-50%);  /* Ajusta para o centro exato */
+}
 
 
 
