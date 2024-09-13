@@ -110,7 +110,7 @@ img {
 .best-item h4 {
  
     font-size: 2rem;
-    pointer-events: none; /* Desativa o clique no h4 */
+   
   }
   
 
@@ -163,14 +163,14 @@ img {
   padding: 1rem 3rem;
   
   
-  pointer-events: none; /* Desativa o clique no h4 */
+  
 }
 .normal-item2 p,
 .best-item2 p {
   padding: 0px 3rem;
   
   
-  pointer-events: none; /* Desativa o clique no h4 */
+ 
 }
 
 .normal-item2 .book{
@@ -192,14 +192,16 @@ img {
   text-align: center;
   transition: .2s ease-out;
   margin: 139px 1rem;
+  pointer-events: auto; /* Garante que o botão seja clicável */
+  pointer-events: none; /* Desativa cliques no h4 */
   
  
-  pointer-events: none; /* Desativa o clique no h4 */
+ 
 }
 
 .best-item2 h3 {
   text-decoration: line-through;
-  pointer-events: none; /* Desativa o clique no h4 */
+ 
 }
 
 .best-item2 .book{
@@ -210,7 +212,7 @@ img {
 
 .best-item2 h4 {
   font-size: 2rem;
-  pointer-events: none; /* Desativa o clique no h4 */
+ 
 }
 
 .best-item2 button {
