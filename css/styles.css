@@ -173,8 +173,9 @@ a:hover {
 	color: white
 }
 .site-name img{
-	width: 150px; 
-	height: 37px
+	width: 50px;
+    height: 28px;
+    margin: -11px;
 }
 .logo {
 	margin: 80px 0 100px 0;
