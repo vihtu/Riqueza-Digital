@@ -531,6 +531,73 @@
 
 
 
+
+
+<!-- Perguntas Frequentes (FAQ) -->
+ <!-- CSS Files -->
+
+ <style>
+	 .faq-item {
+		 margin: 10px 0;
+		 cursor: pointer; /* Muda o cursor ao passar o mouse */
+	 }
+	 .faq-answer {
+		 display: none; /* Inicialmente escondido */
+		 margin: 5px 0 15px 0;
+	 }
+ </style>
+
+ <script>
+	 function toggleAnswer(element) {
+		 const answer = element.nextElementSibling;
+		 // Verifica se a resposta está visível
+		 if (answer.style.display === "block") {
+			 answer.style.display = "none"; // Esconde a resposta
+		 } else {
+			 // Esconde todas as respostas
+			 const allAnswers = document.querySelectorAll('.faq-answer');
+			 allAnswers.forEach((ans) => {
+				 ans.style.display = "none"; // Esconde todas
+			 });
+			 answer.style.display = "block"; // Exibe a resposta clicada
+		 }
+	 }
+ </script>
+</head>
+<body>
+
+<div id="faq" class="container">
+ <div class="text-center">
+	 <h2 class="wow fadeInLeft">Perguntas Frequentes</h2>
+ </div>
+ <div class="row">
+	 <div class="col-md-12">
+		 <div class="faq-item wow fadeInUp" onclick="toggleAnswer(this)">
+			 <h4>1 O que é o treinamento Riqueza Digital?</h4>
+		 </div>
+		 <p class="faq-answer">O treinamento Riqueza Digital ensina a vender diversos produtos online utilizando ferramentas eficazes para maximizar seus resultados.</p>
+
+		 <div class="faq-item wow fadeInUp" onclick="toggleAnswer(this)">
+			 <h4>2 Como posso acessar o curso?</h4>
+		 </div>
+		 <p class="faq-answer">Após a compra, você receberá um e-mail de confirmação com instruções detalhadas sobre como acessar o conteúdo. Normalmente, você poderá fazer login em nossa plataforma online usando as credenciais fornecidas no momento da compra.</p>
+
+		 <div class="faq-item wow fadeInUp" onclick="toggleAnswer(this)">
+			 <h4>3 Há algum suporte disponível durante o curso?</h4>
+		 </div>
+		 <p class="faq-answer">Sim, oferecemos suporte durante todo o curso para esclarecer dúvidas e ajudar no seu aprendizado.</p>
+
+		
+	 </div>
+ </div>
+</div>
+
+
+	
+
+
+	
+
 <!-- /.footer -->
 <footer id="footer">
 	<div class="container">
