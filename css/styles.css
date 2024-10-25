@@ -108,6 +108,48 @@ a:hover {
 #footer {
     margin-top: 50px; /* Ajuste o valor conforme necessário */
 }
+#additional-carousel {
+    padding: 50px 0;
+}
+
+#additional-carousel .text-center h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+#additional-screenshots .screen {
+    position: relative;
+    overflow: hidden;
+    margin: 0 15px;
+    text-align: center;
+}
+
+#additional-screenshots .screen img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#additional-screenshots .screen:hover img {
+    transform: scale(1.05);
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+    #additional-carousel h2 {
+        font-size: 2rem;
+    }
+
+    #additional-screenshots .screen {
+        margin: 0 10px;
+    }
+
+    #additional-carousel {
+        padding: 30px 0;
+    }
+}
+
 
 
 
@@ -608,7 +650,7 @@ a:hover {
 	font-size: 40px;
 }
 #footer {
-	background: #202020;
+	background: #000000;
 	padding: 50px 0 50px;
 	color: #BDBDBD;
 }
