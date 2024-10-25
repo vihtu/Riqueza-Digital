@@ -600,31 +600,142 @@
 
 	
 
-<!-- /.footer -->
+<div id="additional-carousel"></div>
+<div class="container">
+    <div class="text-center">
+        <h2 class="wow fadeInLeft">OUTROS TREINAMENTOS EXCLUSIVOS</h2>
+    </div>
+    <div class="row screenshotss">
+        <div id="additional-screenshots" class="owl-carousel">
+            <!-- /.screenshot images -->
+            <div class="screen wow fadeInUp">
+                <a href="https://pay.cakto.com.br/6WrWcLn" target="_blank">
+                    <img src="images/capahot.jpeg" alt="Benefício 1">
+                    <div class="button-overlay">
+                        <button class="btn btn-default">Saiba Mais</button>
+                    </div>
+                </a>
+           
+        </div>
+    </div>
+</div>
+
+<style>
+    .screen {
+        position: relative; /* Para que o overlay do botão funcione */
+    }
+
+    .button-overlay {
+        position: absolute;
+        top: 81%; /* Centraliza verticalmente */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta para o centro */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        background-color:#0d7183;* Cor do botão */
+        color: white; /* Cor do texto do botão */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px; /* Bordas arredondadas */
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #0d7183; /* Cor ao passar o mouse */
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
 <footer id="footer">
 	<div class="container">
 		<div class="col-sm-4 col-sm-offset-4">
 			<!-- /.social links -->
-				
-			<div class="text-center wow fadeInUp" style="font-size: 14px;"> <a ">riqueza digital 2024</a></div>
+				<div class="social text-center">
+					<ul>
+						
+					</ul>
+				</div>	
+			<div class="text-center wow fadeInUp" style="font-size: 14px;"> <a href="http://www.webthemez.com">Saúde Bem-Estar 2024</a></div>
 			<a href="#" class="scrollToTop"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</div>	
 	</div>	
 </footer>
-	
-	<!-- /.javascript files -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/ekko-lightbox-min.js"></script>
-	<script type="text/javascript">
-	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); }); 
-	</script>
-	<script>
-		new WOW().init();
+
+
+
+<!-- JavaScript Files -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/ekko-lightbox-min.js"></script>
+
+<script type="text/javascript">
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { 
+        event.preventDefault(); 
+        $(this).ekkoLightbox(); 
+    }); 
+</script>
+
+<script>
+    new WOW().init();
+
+    // Inicialização do carrossel principal
+    $("#screenshotss").owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+
+    // Inicialização do novo carrossel
+    $("#additional-screenshots").owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
 	</script>
   </body>
 </html>
