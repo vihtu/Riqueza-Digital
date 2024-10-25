@@ -105,6 +105,10 @@ a:hover {
     
 	color:  #0d7183;
 }
+#footer {
+    margin-top: 50px; /* Ajuste o valor conforme necessário */
+}
+
 
 
 
@@ -432,6 +436,10 @@ a:hover {
 	border: none;
 	background-color: transparent;
 }
+
+
+
+
 .ekko-lightbox .modal-header {
 	border: 0;
 	padding-left: 0;
